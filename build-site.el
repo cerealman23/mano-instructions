@@ -22,9 +22,10 @@
              :base-directory "./content" ; all org files
              :publishing-directory "./public" ; outpit directory
              :publishing-function 'org-html-publish-to-html
-	            :with-author nil           ;; Don't include author name
+	            :with-author t           ;; Don't include author name
              :with-creator t            ;; Include Emacs and Org versions in footer
              :with-toc t                ;; Include a table of contents
+	     :author "Malcolm Kahora"
              :section-numbers nil       ;; Don't include section numbers
              :time-stamp-file nil)))    ;; Don't include time stamp in file
 
