@@ -6,11 +6,11 @@
 
 You might have to make an oracle account
 
-The installer will download the binary to your program files by default.  Either way find out where the bin is stored
+The installer will download the binary to your program files by default.  Either way find out where the bin is stored.
 
-** Next step is running the cmd as the administrator.
+** Run cmd as the administrator.
 
-Type in this command to set the JAVA_HOME.  The path should be to your java 11 bin files.
+Type in this command to set the JAVA HOME system variable.  The path should be to your java 11 bin files.
 
 #+begin_src shell
 
@@ -41,6 +41,8 @@ Th GUI should pop up and be ready to run
 
 * Linux (Ubuntu 20.04)
 
+** Install the default JDK
+
 #+begin_src shell
 
 sudo apt update
@@ -49,7 +51,7 @@ sudo apt update
 
 #+end_src
 
-Check the version is 11
+** Check the version is 11 
 
 #+begin_src shell
 
@@ -67,15 +69,19 @@ OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2.20.04, mixed mode)
 
 #+end_src
 
+** Install the simulator 
+
 Find out where you want to install the simulator
 
-install it with the following
+Install it with the following
 
 #+begin_src shell
 
 wget https://github.com/TomerAberbach/mano-simulator/releases/download/mano-simulator-1.0-SNAPSHOT/mano-simulator-1.0-SNAPSHOT.jar
 
 #+end_src
+
+** Run the program
 
 You can now run the jar with
 
